@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGƯỜI LẠ MẶT</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body, html {
+            height: 100%;
+            background: #000;
+            overflow: hidden;
+            display: center;
+            justify-content: center;
+            cursor: pointer;
+            user-select: none;
+            font-family: Roboto, sans-serif;
+	    margin-top: 100px;
+        }
+        .screen {
+            text-align: center;
+            animation: appear 2.5s ease-out;
+        }
+        h1 {
+            font-size: 96px;
+            font-weight: 900;
+            background: linear-gradient(90deg, #7b2cbf, #00eaff, #ff3366);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 80px #7b2cbf;
+            letter-spacing: 18px;
+            margin-bottom: 40px;
+        }
+        .start {
+            color: #ff3366;
+            font-size: 36px;
+            font-weight: bold;
+            animation: blink 1.6s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        @keyframes appear {
+            from { opacity: 0; transform: scale(0.7); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body onclick="location.href='index.html'" onkeydown="location.href='index.html'" tabindex="0">
+    <div class="screen">
+        <h1>NGƯỜI LẠ MẶT</h1>
+        <div class="start">NHẤN ĐỂ BẮT ĐẦU</div>
+    </div>
+</body>
+</html>

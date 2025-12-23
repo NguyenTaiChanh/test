@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameTest</title>
+    <!-- Nhúng file CSS giao diện -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+
+
+
+<div class="topbar">
+    <div class="left">NGƯỜI LẠ MẶT</div>
+
+    <div class="center">
+        <button>Túi</button>
+        <button>Hồ sơ</button>
+        <button>Tài liệu</button>
+        <button id="skill-btn">Kỹ năng</button>
+    </div>
+
+    <div class="right menu-wrapper">
+        <button class="menu-btn">Menu</button>
+        <div class="menu-dropdown">
+            <div class="menu-item">Cài đặt</div>
+            <div class="menu-item">Lưu game</div>
+            <div class="menu-item">Tải lại</div>
+            <div class="menu-item">Thoát</div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="game-wrapper">
+        <div class="game-area">
+            <!-- Nhét game của bạn vào đây -->
+        </div>
+    </div>
+
+//nút bottom bar //
+<div class="bottom-bar">
+        <button id="pause-npc-btn" class="pause-btn">Dừng NPC</button>
+	<button id="sleep-btn" class="sleep-btn">Ngủ</button>
+    </div>
+
+
+
+<!-- TẢI CÁC SCRIPT JS THEO THỨ TỰ QUAN TRỌNG -->
+    <!-- 1. Cấu hình hiệu ứng -->
+    <script src="js/HieuUng.js"></script>
+    <!-- 2. Class xử lý logic Nhân vật -->
+    <script src="js/map.js"></script>
+    <script src="js/npc.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/skillData.js"></script>
+    <script src="js/skillPanel.js"></script>
+    
+    
+     
+    <script src="js/Thoai.js"></script>
+    
+    <script src="js/main.js"></script>
+
+</body>
+</html>
